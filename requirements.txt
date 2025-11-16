@@ -1,0 +1,4 @@
+fastapi==0.121.2
+joblib==1.2.0
+pydantic==2.12.4
+sentence_transformers==5.1.2
