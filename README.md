@@ -32,10 +32,10 @@ Label sentimen dibagi menjadi:
   
 Dataset asli berukuran besar: **1.093.500 data**. Karena keterbatasan resource, dilakukan **undersampling** menjadi **30.000 data** (10.000 per kelas). 
 
-## Visualisasi distribusi data sebelum undersampling:
+## Distribusi data sebelum undersampling:
 <img width="566" height="393" alt="image" src="https://github.com/user-attachments/assets/1f2c416a-e844-478d-9400-2ed53e438617" />
 
-## Visualisasi distribusi data setelah undersampling:
+## Distribusi data setelah undersampling:
 <img width="558" height="393" alt="image" src="https://github.com/user-attachments/assets/e519014c-bf4f-4d7a-a8fe-d54e487343f5" />
 
 Proses yang dilakukan:
@@ -43,7 +43,7 @@ Proses yang dilakukan:
 2. **Embedding teks** menggunakan **Sentence Transformer**  
 3. **Klasifikasi** menggunakan **Logistic Regression**
 
-## Pemilihan Metode
+## Pemilihan Model
 - **Sentence Transformer** dipilih karena mampu menghasilkan **representasi vektor semantik** dari kalimat secara efisien. Model ini dapat menangkap konteks dan makna kata secara lebih baik dibanding teknik embedding tradisional seperti TF-IDF, sehingga cocok untuk analisis sentimen berbasis teks yang panjang dan bervariasi.  
 - **Logistic Regression** dipilih sebagai classifier karena **sederhana, cepat, dan efektif** untuk masalah klasifikasi multi-class. Logistic Regression juga mudah diinterpretasikan dan cocok untuk dataset berukuran sedang hingga besar setelah embedding.
 
